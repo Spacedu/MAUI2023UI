@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap 03", "Cap 03", "{9B2C9B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottie", "Lottie\Lottie.csproj", "{A0136340-6565-4B60-9C6F-255F2BD51AC8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap 04", "Cap 04", "{7773BCFE-FB77-458D-B6B9-0F47C6331A55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Borda", "Borda\Borda.csproj", "{88733ADB-EEB5-4373-BA6D-F10FF3E15703}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +23,19 @@ Global
 		{A0136340-6565-4B60-9C6F-255F2BD51AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0136340-6565-4B60-9C6F-255F2BD51AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A0136340-6565-4B60-9C6F-255F2BD51AC8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{88733ADB-EEB5-4373-BA6D-F10FF3E15703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88733ADB-EEB5-4373-BA6D-F10FF3E15703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88733ADB-EEB5-4373-BA6D-F10FF3E15703}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{88733ADB-EEB5-4373-BA6D-F10FF3E15703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88733ADB-EEB5-4373-BA6D-F10FF3E15703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88733ADB-EEB5-4373-BA6D-F10FF3E15703}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A0136340-6565-4B60-9C6F-255F2BD51AC8} = {9B2C9B8E-106E-4D45-BFD8-9CFD4B901995}
+		{88733ADB-EEB5-4373-BA6D-F10FF3E15703} = {7773BCFE-FB77-458D-B6B9-0F47C6331A55}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38D8B94D-7B5D-4F24-A396-C1FBB70493F7}
