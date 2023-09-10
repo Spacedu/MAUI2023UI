@@ -8,12 +8,16 @@
     <ScrollView>
         <Grid>
 
-            <Image Aspect="Fill" Source="https://plus.unsplash.com/premium_photo-1680543345312-e5f25a1557ae" />
-            <Border Margin="20" BackgroundColor="#66FFFFFF" HeightRequest="200" StrokeThickness="0" VerticalOptions="Start" />
-            <acrylic:AcrylicView EffectStyle="Light">
-                <Label Text="Olá mundo!" />
-
-            </acrylic:AcrylicView>
+            <Image Aspect="Fill" Source="https://static.vecteezy.com/system/resources/previews/015/639/809/original/illustration-realistic-abstract-3d-cute-blue-sky-sun-clouds-isolated-on-background-vector.jpg" />
+            <VerticalStackLayout>
+                <Border Margin="20" BackgroundColor="#66FFFFFF" HeightRequest="200" StrokeThickness="0" VerticalOptions="Start" />
+                <acrylic:AcrylicView Margin="20" Padding="20" EffectStyle="ExtraLight" HeightRequest="100">
+                    <Label Text="Olá mundo!" />
+                </acrylic:AcrylicView>
+                <acrylic:AcrylicView Margin="20" Padding="20" EffectStyle="Custom" TintColor="OrangeRed" TintOpacity=".15" HeightRequest="100" >
+                    <Label Text="Olá mundo!" />
+                </acrylic:AcrylicView>
+            </VerticalStackLayout>
         </Grid>
     </ScrollView>
 
