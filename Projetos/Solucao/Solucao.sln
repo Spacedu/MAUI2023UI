@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap 06", "Cap 06", "{086632
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfeitoTransparente", "EfeitoTransparente\EfeitoTransparente.csproj", "{9BA0DC5C-4704-46FB-B43C-45702FC5333D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap 07", "Cap 07", "{FDE82DD4-91C5-473E-A49D-2406334350FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Componetizacao", "Componetizacao\Componetizacao.csproj", "{FA37C364-317F-4078-85A3-3D3A126FA2C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,12 @@ Global
 		{9BA0DC5C-4704-46FB-B43C-45702FC5333D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA0DC5C-4704-46FB-B43C-45702FC5333D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BA0DC5C-4704-46FB-B43C-45702FC5333D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FA37C364-317F-4078-85A3-3D3A126FA2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA37C364-317F-4078-85A3-3D3A126FA2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA37C364-317F-4078-85A3-3D3A126FA2C8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FA37C364-317F-4078-85A3-3D3A126FA2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA37C364-317F-4078-85A3-3D3A126FA2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA37C364-317F-4078-85A3-3D3A126FA2C8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +68,7 @@ Global
 		{88733ADB-EEB5-4373-BA6D-F10FF3E15703} = {7773BCFE-FB77-458D-B6B9-0F47C6331A55}
 		{A074C47B-7C9C-4E1D-969C-A6F4870031D4} = {962834AB-1ACE-416D-87E9-041B4292E8D0}
 		{9BA0DC5C-4704-46FB-B43C-45702FC5333D} = {0866328D-7E4C-434A-AC6A-AA89E16518CF}
+		{FA37C364-317F-4078-85A3-3D3A126FA2C8} = {FDE82DD4-91C5-473E-A49D-2406334350FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38D8B94D-7B5D-4F24-A396-C1FBB70493F7}

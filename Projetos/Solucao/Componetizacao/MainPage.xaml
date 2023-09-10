@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Componetizacao.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border
+                HeightRequest="125"
+                Stroke="Gray"
+                StrokeShape="RoundRectangle 10"
+                WidthRequest="100">
+                <VerticalStackLayout>
+                    <Image Source="https://cdn0.iconfinder.com/data/icons/evericons-24px-vol-1/24/menu-dots-512.png" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Item do menu"
+                        VerticalOptions="End" />
+                </VerticalStackLayout>
+            </Border>
+            <Border
+                HeightRequest="125"
+                Stroke="Gray"
+                StrokeShape="RoundRectangle 10"
+                WidthRequest="100">
+                <VerticalStackLayout>
+                    <Image Source="https://cdn0.iconfinder.com/data/icons/evericons-24px-vol-1/24/menu-dots-512.png" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Item do menu"
+                        VerticalOptions="End" />
+                </VerticalStackLayout>
+
+            </Border>
+            <Border
+                HeightRequest="125"
+                Stroke="Gray"
+                StrokeShape="RoundRectangle 10"
+                WidthRequest="100">
+                <VerticalStackLayout>
+                    <Image Source="https://cdn0.iconfinder.com/data/icons/evericons-24px-vol-1/24/menu-dots-512.png" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Item do menu"
+                        VerticalOptions="End" />
+                </VerticalStackLayout>
+
+            </Border>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
