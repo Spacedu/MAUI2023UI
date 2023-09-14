@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AbaCustomizada.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="Beige">
+
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout>
+                <Label Text="Conteúdo" />
+                <Image Source="https://images.unsplash.com/photo-1682685797365-6f57bbebffed" />
+                <Image Source="https://images.unsplash.com/photo-1682685797365-6f57bbebffed" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Border
+            Margin="25"
+            Padding="20"
+            StrokeShape="RoundRectangle 35"
+            VerticalOptions="End">
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
+                <Image Source="inicio.png" WidthRequest="30" />
+                <Image Source="relatorio.png" WidthRequest="25" />
+                <Image Source="calendario.png" WidthRequest="25" />
+                <Image Source="perfil.png" WidthRequest="30" />
+            </HorizontalStackLayout>
+        </Border>
+    </Grid>
+
+</ContentPage>
