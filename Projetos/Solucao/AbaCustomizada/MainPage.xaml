@@ -5,14 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     BackgroundColor="Beige">
 
-    <Grid>
-        <ScrollView>
-            <VerticalStackLayout>
-                <Label Text="Conteúdo" />
-                <Image Source="https://images.unsplash.com/photo-1682685797365-6f57bbebffed" />
-                <Image Source="https://images.unsplash.com/photo-1682685797365-6f57bbebffed" />
-            </VerticalStackLayout>
-        </ScrollView>
+    <Grid x:Name="Container">
+        <!--  O conteúdo entra aqui  -->
 
         <Border
             Margin="25"
@@ -20,10 +14,26 @@
             StrokeShape="RoundRectangle 35"
             VerticalOptions="End">
             <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
-                <Image Source="inicio.png" WidthRequest="30" />
-                <Image Source="relatorio.png" WidthRequest="25" />
-                <Image Source="calendario.png" WidthRequest="25" />
-                <Image Source="perfil.png" WidthRequest="30" />
+                <Image Source="inicio.png" WidthRequest="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="Início" Tapped="TapGestureRecognizer_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="relatorio.png" WidthRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="Relatório" Tapped="TapGestureRecognizer_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="calendario.png" WidthRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="Calendário" Tapped="TapGestureRecognizer_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="perfil.png" WidthRequest="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="Perfil" Tapped="TapGestureRecognizer_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
             </HorizontalStackLayout>
         </Border>
     </Grid>
