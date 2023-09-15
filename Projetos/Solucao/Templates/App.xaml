@@ -3,7 +3,11 @@
     x:Class="Templates.App"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:Templates.ViewModels"
     xmlns:local="clr-namespace:Templates">
+    <Application.BindingContext>
+        <vm:MeuTemplateViewModel />
+    </Application.BindingContext>
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -44,7 +48,8 @@
                             Orientation="Horizontal"
                             Spacing="40"
                             VerticalOptions="Center">
-                            <Button FontSize="10" Text="Ver Termo de Uso" Clicked="Button_Clicked" />
+                            <!-- <Button FontSize="10" Text="Ver Termo de Uso" Clicked="Button_Clicked" />-->
+                            <Button FontSize="10" Text="Termo de Uso" Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MeuTemplateViewModel}}, Path=VerTermosCommand}" />
                             <Label
                                 Grid.Row="0"
                                 HorizontalOptions="EndAndExpand"
@@ -57,3 +62,4 @@
         </ResourceDictionary>
     </Application.Resources>
 </Application>
+
