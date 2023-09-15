@@ -3,7 +3,8 @@
     x:Class="Templates.Paginas.Pagina2"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Pagina2">
+    Title="Pagina2"
+    ControlTemplate="{StaticResource MeuTemplate}">
     <VerticalStackLayout>
         <Label
             HorizontalOptions="Center"

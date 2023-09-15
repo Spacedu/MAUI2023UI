@@ -2,12 +2,12 @@
 <ContentPage
     x:Class="Templates.Paginas.Pagina1"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Pagina1">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" ControlTemplate="{StaticResource MeuTemplate}" Title="Pagina1">
     <VerticalStackLayout>
         <Label
             HorizontalOptions="Center"
             Text="Página 1"
             VerticalOptions="Center" />
+        <Button Text="Próximo" Clicked="Button_Clicked" />
     </VerticalStackLayout>
 </ContentPage>

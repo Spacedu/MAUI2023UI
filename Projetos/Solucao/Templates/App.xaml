@@ -1,14 +1,59 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
-<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Templates"
-             x:Class="Templates.App">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application
+    x:Class="Templates.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Templates">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <ControlTemplate x:Key="MeuTemplate">
+                <Grid RowDefinitions="60, *, 80">
+                    <Border BackgroundColor="Beige" StrokeThickness="0">
+
+                        <StackLayout
+                            Padding="15"
+                            HorizontalOptions="FillAndExpand"
+                            Orientation="Horizontal"
+                            Spacing="40"
+                            VerticalOptions="Center">
+                            <Image
+                                HorizontalOptions="StartAndExpand"
+                                Source="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-512.png"
+                                WidthRequest="30" />
+                            <Label
+                                Grid.Row="0"
+                                HorizontalOptions="End"
+                                Text="Cabeçalho"
+                                VerticalOptions="Center" />
+                        </StackLayout>
+                    </Border>
+
+                    <ContentPresenter Grid.Row="1" />
+                    <Border
+                        Grid.Row="2"
+                        BackgroundColor="Beige"
+                        StrokeThickness="0">
+
+                        <StackLayout
+                            Padding="15"
+                            HorizontalOptions="FillAndExpand"
+                            Orientation="Horizontal"
+                            Spacing="40"
+                            VerticalOptions="Center">
+                            <Button FontSize="10" Text="Ver Termo de Uso" Clicked="Button_Clicked" />
+                            <Label
+                                Grid.Row="0"
+                                HorizontalOptions="EndAndExpand"
+                                Text="Todos os direitos reservados - Rodapé"
+                                VerticalOptions="Center" />
+                        </StackLayout>
+                    </Border>
+                </Grid>
+            </ControlTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -2,82 +2,43 @@
 <ContentPage
     x:Class="Templates.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <Grid RowDefinitions="60, *, 80">
-        <Border BackgroundColor="Beige" StrokeThickness="0">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    ControlTemplate="{StaticResource MeuTemplate}"
+    >
 
-            <StackLayout
-                Padding="15"
-                HorizontalOptions="FillAndExpand"
-                Orientation="Horizontal"
-                Spacing="40"
-                VerticalOptions="Center">
-                <Image
-                    HorizontalOptions="StartAndExpand"
-                    Source="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-512.png"
-                    WidthRequest="30" />
-                <Label
-                    Grid.Row="0"
-                    HorizontalOptions="End"
-                    Text="Cabeçalho"
-                    VerticalOptions="Center" />
-            </StackLayout>
-        </Border>
+<!-- Início do Conteúdo -->
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
 
-        <Border
-            Grid.Row="2"
-            BackgroundColor="Beige"
-            StrokeThickness="0">
+            <Image
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="dotnet_bot.png" />
 
-            <StackLayout
-                Padding="15"
-                HorizontalOptions="FillAndExpand"
-                Orientation="Horizontal"
-                Spacing="40"
-                VerticalOptions="Center">
-                <Button Text="Próximo" />
-                <Label
-                    Grid.Row="0"
-                    HorizontalOptions="EndAndExpand"
-                    Text="Todos os direitos reservados - Rodapé"
-                    VerticalOptions="Center" />
-            </StackLayout>
-        </Border>
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Hello, World!" />
 
-        <ScrollView Grid.Row="1">
-            <VerticalStackLayout
-                Padding="30,0"
-                Spacing="25"
-                VerticalOptions="Center">
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Welcome to .NET Multi-platform App UI" />
 
-                <Image
-                    HeightRequest="200"
-                    HorizontalOptions="Center"
-                    SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                    Source="dotnet_bot.png" />
+            <Button
+                Clicked="ProximaTela"
+                HorizontalOptions="Center"
+                Text="Próximo" />
 
-                <Label
-                    FontSize="32"
-                    HorizontalOptions="Center"
-                    SemanticProperties.HeadingLevel="Level1"
-                    Text="Hello, World!" />
-
-                <Label
-                    FontSize="18"
-                    HorizontalOptions="Center"
-                    SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                    SemanticProperties.HeadingLevel="Level2"
-                    Text="Welcome to .NET Multi-platform App UI" />
-
-                <Button
-                    x:Name="CounterBtn"
-                    Clicked="OnCounterClicked"
-                    HorizontalOptions="Center"
-                    SemanticProperties.Hint="Counts the number of times you click"
-                    Text="Click me" />
-
-            </VerticalStackLayout>
-        </ScrollView>
-    </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+    <!-- Fim do Conteúdo -->
 
 </ContentPage>
