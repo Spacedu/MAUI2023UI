@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BindableProps;
+using Microsoft.Maui.Graphics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +8,10 @@ using System.Threading.Tasks;
 
 namespace ComponenteGrafico.Componentes
 {
-    internal class Grafico : IDrawable
+    public partial class Grafico : BindableObject, IDrawable
     {
+        [BindableProp]
+        private int[] _valores = new int[] { 0,0,0 };
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
             // View:     frameView
@@ -25,7 +29,7 @@ namespace ComponenteGrafico.Componentes
             canvas.SaveState();
             canvas.FillColor = Color.FromRgb(13, 175, 124);
             canvas.Alpha = 1;
-            canvas.FillRoundedRectangle(59f, 57f, 28f, 200f, 0f);
+            canvas.FillRoundedRectangle(59f, dirtyRect.Height - _valores[0], 28f, (float)_valores[0], 0f);
             canvas.RestoreState();
 
 
@@ -36,7 +40,7 @@ namespace ComponenteGrafico.Componentes
             canvas.SaveState();
             canvas.FillColor = Color.FromRgb(251, 177, 116);
             canvas.Alpha = 1;
-            canvas.FillRoundedRectangle(123f, 27f, 28f, 230f, 0f);
+            canvas.FillRoundedRectangle(123f, dirtyRect.Height - _valores[1], 28f, (float)_valores[1], 0f);
             canvas.RestoreState();
 
 
@@ -47,7 +51,7 @@ namespace ComponenteGrafico.Componentes
             canvas.SaveState();
             canvas.FillColor = Color.FromRgb(237, 111, 111);
             canvas.Alpha = 1;
-            canvas.FillRoundedRectangle(187f, 127f, 28f, 130f, 0f);
+            canvas.FillRoundedRectangle(187f, dirtyRect.Height - _valores[2], 28f, (float)_valores[2], 0f);
             canvas.RestoreState();
 
 

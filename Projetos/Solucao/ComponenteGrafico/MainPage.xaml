@@ -6,7 +6,15 @@
     xmlns:componentes="clr-namespace:ComponenteGrafico.Componentes">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <componentes:Grafico x:Key="grafico" />
+            <componentes:Grafico x:Key="grafico">
+                <componentes:Grafico.Valores>
+                    <x:Array Type="{x:Type x:Int32}">
+                        <x:Int32>210</x:Int32>
+                        <x:Int32>50</x:Int32>
+                        <x:Int32>150</x:Int32>
+                    </x:Array>
+                </componentes:Grafico.Valores>
+            </componentes:Grafico>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -21,7 +29,15 @@
                 WidthRequest="246" />
             <GraphicsView HeightRequest="257" WidthRequest="246">
                 <GraphicsView.Drawable>
-                    <componentes:Grafico />
+                    <componentes:Grafico>
+                        <componentes:Grafico.Valores>
+                            <x:Array Type="{x:Type x:Int32}">
+                                <x:Int32>120</x:Int32>
+                                <x:Int32>220</x:Int32>
+                                <x:Int32>190</x:Int32>
+                            </x:Array>
+                        </componentes:Grafico.Valores>
+                    </componentes:Grafico>
                 </GraphicsView.Drawable>
             </GraphicsView>
         </VerticalStackLayout>
